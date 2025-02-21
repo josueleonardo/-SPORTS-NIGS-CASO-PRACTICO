@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:sportnigs/web/pages/clasesScreen.dart';
 import 'package:sportnigs/web/pages/horarioScreen.dart';
-import 'package:sportnigs/web/pages/loginScreen.dart';
+//import 'package:sportnigs/web/pages/loginScreen.dart';
 import 'package:sportnigs/web/widgets/responsiveWidget.dart';
 import 'package:turn_page_transition/turn_page_transition.dart';
 
