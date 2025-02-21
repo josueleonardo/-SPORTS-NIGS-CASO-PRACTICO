@@ -22,9 +22,11 @@ class _HorarioScreenState extends State<HorarioScreen> {
           final DocumentSnapshot snapshot = await clases.doc(docSnapshot.id).get();
           final userFields = snapshot.data() as Map<String, dynamic>;
           //print(userFields["aforo"]);
-          aforos.add(userFields["aforo"]);
           //UIDs.add(docSnapshot.id);
           print(aforos);
+          setState(() {
+            aforos.add(userFields["aforo"]);
+          });
         }
       },
       onError: (e) => print("Error completing: $e"),
@@ -87,7 +89,7 @@ class _HorarioScreenState extends State<HorarioScreen> {
                           color: Colors.white,
                           child: Center(
                             child: Text(
-                              "Entrenando: ${aforos[0]}",
+                              "Entrenando: ${aforos[2]}",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 24,
@@ -157,7 +159,7 @@ class _HorarioScreenState extends State<HorarioScreen> {
                           color: Colors.white,
                           child: Center(
                             child: Text(
-                              "Entrenando: ${aforos[2]}",
+                              "Entrenando: ${aforos[0]}",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 24,
