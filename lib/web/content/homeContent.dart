@@ -66,6 +66,7 @@ class DesktopHomeContent extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.fromLTRB(width * .60, 0, width * .12, 0),
                   child: GestureDetector(
+                    /*
                     onTap: () => Navigator.of(context).push(
                       TurnPageRoute(
                         overleafColor: Color(0xFFD99CB8),
@@ -74,7 +75,7 @@ class DesktopHomeContent extends StatelessWidget {
                         reverseTransitionDuration: const Duration(milliseconds: 500),
                         builder: (context) => const Loginscreen(),
                       ),
-                    ),
+                    ),*/
                     child: Container(
                       height: height * .08,
                       width: width * .15,
